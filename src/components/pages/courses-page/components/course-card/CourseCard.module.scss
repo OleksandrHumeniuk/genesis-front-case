@@ -1,0 +1,89 @@
+@import 'src/styles/partials/colors';
+
+.link{
+  text-decoration: none;
+  display: flex;
+}
+
+.wrapper{
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.picture{
+  border-radius: 10px;
+  border: 1px solid $primary;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  object-position: center;
+}
+
+.video{
+  border: 1px solid $primary;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  height: 200px;
+}
+
+
+.headerRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date{
+  font-weight: 800;
+}
+
+.title{
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.description{
+  margin-bottom: 16px;
+}
+
+.lessonCount{
+  font-weight: 800;
+}
+
+.cardActions{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.actionsWrapper{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oneLine{
+  display: flex;
+  gap: 20px;
+}
+
+.rating{
+  color: $primary;
+}
+
+.iconButton{
+  transition: 0.5s;
+}
+
+.iconButtonAvatar{
+  background: $background-secondary;
+  color: $primary;
+}

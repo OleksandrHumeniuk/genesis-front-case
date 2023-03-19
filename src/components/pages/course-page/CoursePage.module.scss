@@ -1,0 +1,93 @@
+@import 'src/styles/partials/utils';
+@import 'src/styles/partials/colors';
+
+.header{
+  @include flex-center;
+  gap: 50px;
+  width: 1200px;
+  max-width: 90vw;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+.courseInfo{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.courseInfoRow{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.rating{
+  color: $primary;
+  height: fit-content;
+}
+
+.description{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.previewImage{
+  max-width: 600px;
+  border-radius: 10px;
+  align-self: center;
+  border: 1px solid $primary;
+}
+
+.skillsWrapper{
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 12px
+}
+
+.skillsHeader{
+  font-weight: 600;
+}
+
+.skill{
+  display: flex;
+  gap: 8px;
+}
+
+.lessonsHeader{
+  margin: 10px 0;
+}
+
+.lessonsWrapper{
+  width: 1200px;
+  max-width: 90vw;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .header{
+    flex-direction: column;
+  }
+  .previewImage{
+    max-width: 100%;
+    order: 1;
+  }
+  .courseInfo{
+    order: 2;
+  }
+
+}

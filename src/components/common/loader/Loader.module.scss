@@ -1,0 +1,7 @@
+@import 'src/styles/partials/utils';
+
+.wrapper{
+  width: 100%;
+  margin-top: 25vh;
+  @include flex-center;
+}

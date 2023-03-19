@@ -1,0 +1,16 @@
+@import 'src/styles/partials/colors';
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar{
+  border: 2px solid $primary;
+  background: inherit;
+}
+
+.label{
+  height: fit-content;
+}
