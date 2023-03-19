@@ -1,38 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <h1 align="center">Learnify</h1>
+</p>
 
-## Getting Started
+  <p align="center">Case for Genesis Front-end school 2023</p>
+  <p align="center">by Oleksandr Humeniuk</p>
 
-First, run the development server:
+## Description
+Web-app with popular courses
 
+### Built with
+
+* Next.js
+* Typescript
+* Material UI
+* SASS
+* Axios
+* Redux Toolkit
+* hls.js
+
+## Installation
+
+Clone the repository and execute:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# run locally
+$ npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+You can access the website by url: http://localhost:3000/
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Check the app out 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Documentation
 
-## Learn More
+#### There are two pages:
 
-To learn more about Next.js, take a look at the following resources:
+**Courses (home) page `/`**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+List of all available courses, their short description, image, and preview video (on hover).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Course page `/[courseId]`**:
 
-## Deploy on Vercel
+Page with information about specific course. 
+Also there is a list of all lessons (videos). You can view only unlocked lessons (videos). 
+Progress of watching a lesson is saved locally, and when you come back, you will start, 
+where you left the last time.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+As instructed by alerts, you can slow down the video by pressing `h` and speed it up by pressing `j`.
+You can also activate picture-in-picture mode by right-clicking the video.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If video source is undefined (server returned such value), default 404 image will be shown.
+
+**Responsive design**
+
+All pages are responsive (for all kinds of devices). Servers errors are handled, and error alerts are shown
+(you can check it, by typing random courseId for `/[courseId]` page).
+
+## Stay in touch
+
+- Author -  [Oleksandr Humeniuk](https://github.com/OleksandrHumeniuk)
+
+## License
+
+Back-end service is [MIT licensed](LICENSE).

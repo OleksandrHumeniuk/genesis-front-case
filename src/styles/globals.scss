@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+@import 'src/styles/partials/colors';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scrollbar-gutter: stable;
+}
+
+* {
+  box-sizing: border-box;
+}

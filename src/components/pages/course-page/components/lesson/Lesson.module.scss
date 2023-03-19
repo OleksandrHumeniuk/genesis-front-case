@@ -1,0 +1,62 @@
+@import 'src/styles/partials/colors';
+@import 'src/styles/partials/utils';
+
+.wrapper{
+  //padding: 6px 12px;
+  width: 100%;
+  padding: 0;
+  //margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header{
+  background: $background-secondary;
+  width: 100%;
+  &:hover{
+    background: #D0E3DC;
+  }
+  &:active{
+    background: #B4D9CC;
+  }
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+  transition: transform .2s linear;
+  &Rotated {
+    width: 32px;
+    height: 32px;
+    transition: transform .2s linear;
+    transform: rotate(180deg);
+  }
+}
+
+.text{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title{
+  font-weight: 600;
+}
+
+.divider{
+  width: 100%;
+}
+
+.videoWrapper{
+  @include flex-center;
+  height: 100%;
+  width: 100%;
+  background: $background-secondary;
+}
+
+.video{
+  width: calc(100%);
+  height: fit-content;
+}
